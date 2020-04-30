@@ -10,6 +10,12 @@ import org.junit.Test;
          Assert.assertEquals("SAD", mood);
 
      }
+     @Test
+     public void testHappyMood(){
+         MoodAnalyser moodAnalyser = new MoodAnalyser();
+         String mood=moodAnalyser.analyseMood("This is a Happy Message");
+         Assert.assertEquals("HAPPY",mood);
      }
+ }
 
 
